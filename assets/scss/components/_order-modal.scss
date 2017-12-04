@@ -1,0 +1,184 @@
+.order-modal {
+	width: 290px;
+	min-height: auto;
+	left: 50%;
+    transform: translateX(-50%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &:before {
+    	content: "";
+    	position: absolute;
+    	background: url('../img/close.svg');
+    	background-size: contain;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	width: 30px;
+    	height: 30px;
+    	top: 20px;
+    	right: 20px;
+    }
+
+    &__title {
+    	font-size: 26px;
+    	line-height: 1;
+    	margin-bottom: 40px;
+    }
+
+    &__large-call {
+    	display: none;
+    }
+
+    &__contact {
+    	background: #DA262D;
+    	color: white;
+    	border-radius: 4px;
+    	height: 45px;
+    	font-size: 16px;
+    	line-height: 44px;
+    	font-weight: bold;
+    	margin-bottom: 10px;
+    	position: relative;
+
+    	&:before {
+			content: "";
+	    	position: absolute;
+	    	background: url('../img/whitephone.svg');
+	    	background-size: contain;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
+	    	width: 16px;
+	    	height: 16px;
+	    	bottom: 16px;
+	    	left: 30px;
+    	}
+
+    	&:after {
+			content: "";
+	    	position: absolute;
+	    	background: url('../img/whitearrow.svg');
+	    	background-size: contain;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
+	    	width: 6px;
+	    	height: 10px;
+	    	top: 17px;
+	    	right: 30px;
+    	}
+    }
+
+    &__button {
+    	background: white;
+    	border: 1px solid #DA262D;
+    	color: #DA262D;
+    	height: 45px;
+    	font-size: 16px;
+    	line-height: 44px;
+    	font-weight: bold;
+    	position: relative;
+    	padding: 0;
+    	margin-top: 10px;
+
+    	&:before {
+			content: "";
+	    	position: absolute;
+	    	background: url('../img/cart.svg');
+	    	background-size: contain;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
+	    	width: 16px;
+	    	height: 16px;
+	    	bottom: 14px;
+	    	left: 30px;
+    	}
+
+    	&:after {
+			content: "";
+	    	position: absolute;
+	    	background: url('../img/arrow.svg');
+	    	background-size: contain;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
+	    	width: 6px;
+	    	height: 10px;
+	    	top: 18px;
+	    	right: 40px;
+    	}
+    }
+
+    @media(min-width: 768px) {
+    	left: 0;
+    	transform: none;
+    	padding-top: 120px;
+    	padding-bottom: 120px;
+    	width: 570px;
+
+    	&__title {
+    		font-size: 36px;
+    	}
+
+    	&__large-call {
+    		display: inline-block;
+    		margin-right: 42px;
+    		font-size: 26px;
+    		line-height: 1;
+    		font-weight: normal;
+    	}
+
+    	&__contact {
+			background: transparent;
+			color: $color-primary;
+			font-size: 26px;
+			line-height: 1;
+			font-weight: normal;
+			height: auto;
+			margin-bottom: 20px;
+
+			&:before {
+				content: "";
+		    	position: absolute;
+		    	background: url('../img/phone.svg');
+		    	background-size: contain;
+		    	background-position: center;
+		    	background-repeat: no-repeat;
+		    	width: 22px;
+		    	height: 22px;
+		    	bottom: 1px;
+		    	left: 178px;
+    		}
+    	}
+
+    	&__button {
+    		background: #DA262D;
+    		width: 290px;
+    		margin-top: 20px;
+    		color: white;
+
+    		&:before {
+				content: "";
+		    	position: absolute;
+		    	background: url('../img/whitecart.svg');
+		    	background-size: contain;
+		    	background-position: center;
+		    	background-repeat: no-repeat;
+		    	width: 16px;
+		    	height: 16px;
+		    	bottom: 14px;
+		    	left: 50px;
+    		}
+
+    		&:after {
+				content: "";
+		    	position: absolute;
+		    	background: url('../img/whitearrow.svg');
+		    	background-size: contain;
+		    	background-position: center;
+		    	background-repeat: no-repeat;
+		    	width: 6px;
+		    	height: 10px;
+		    	top: 18px;
+		    	right: 60px;
+    		}
+    	}
+    }
+}
